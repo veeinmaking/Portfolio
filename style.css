@@ -1,0 +1,155 @@
+:root {
+    --SeaofAtlantis: #0f2026;
+    --othercolor: #858484;
+    --othercolortwo: #888888;
+    --oil-blue: #2e5559;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--SeaofAtlantis);
+    color: white;
+}
+
+h1,
+h3,
+h4,
+h5,
+h6,
+h2 {
+    margin: 0;
+}
+
+#intro {
+    padding: 4rem 1rem 5rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+div>span {
+    font-size: 3rem;
+}
+
+#intro p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+.name span {
+    display: block;
+    color: var(--thercolor);
+    font-size: 4rem;
+}
+
+.profile {
+    padding-bottom: 1rem;
+}
+
+#intro h2 {
+    font-size: 3rem;
+    font-weight: normal;
+}
+
+#hire {
+    background-color: var(--oil-blue);
+    text-align: center;
+    margin: 0 auto;
+    padding: 3rem 0;
+}
+
+#hire p:last-child {
+    margin-top: 3rem;
+}
+
+nav {
+    font-size: 80%;
+    padding: 1rem;
+    background-color: var(--othercolor);
+    ;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-right: 2rem;
+    flex-flow: row wrap;
+
+}
+
+nav a {
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--othercolortwo);
+    font-size: 1.2rem;
+}
+
+nav li:first-child {
+    /* flex-grow: 1; */
+    font-size: 1.5rem;
+    margin: 1rem;
+    flex-basis: 100%;
+}
+
+.resume {
+    background-color: var(--othercolor);
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.resume:hover {
+
+    color: var(--SeaofAtlantis);
+    background: linear-gradient(90deg, rgba(133, 132, 132, 1) 29%, rgba(133, 132, 132, 1) 52%, rgba(0, 212, 255, 1) 77%);
+}
+
+/* .skills div p span{
+    line-height: 6px;
+    margin: 0 auto;
+} */
+
+.gradient-section {
+    height: 2px;
+    background: linear-gradient(90deg, rgba(133, 132, 132, 1) 29%, rgba(133, 132, 132, 1) 52%, rgba(0, 212, 255, 1) 77%);
+}
+
+footer {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.my-picture img{
+    max-width: 300px;
+    width: 100%;
+
+}
+ 
+
+@media (min-width:900px) {
+    nav li:first-child {
+        flex-grow: 1;
+        flex-basis: auto;
+
+    }
+
+
+}
